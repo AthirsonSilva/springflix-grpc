@@ -1,7 +1,8 @@
 grpc:
-    server:
-        port: 6565
+  server:
+    port: 6565
 
 spring:
   jpa:
-      defer-datasource-initialization: true
+    defer-datasource-initialization: true
+

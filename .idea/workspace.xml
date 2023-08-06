@@ -4,29 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d01ddcbf-542b-460a-b2a0-2efb933e0766" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/proto/src/main/proto/common/common.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proto/src/main/proto/movie-service.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proto/src/main/proto/user-service.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/springflix/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/springflix/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/springflix/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/resources/data.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/resources/users.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d01ddcbf-542b-460a-b2a0-2efb933e0766" name="Changes" comment="user service implementation">
+      <change afterPath="$PROJECT_DIR$/movie-service/src/main/java/com/springflix/entity/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/src/main/java/com/springflix/repository/MovieRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/src/main/java/com/springflix/service/MovieService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/src/main/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/movie-service/src/main/resources/movies.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aggregator-service/src/main/java/com/springflix/SpringflixApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/aggregator-service/src/main/java/com/springflix/AggregatorServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aggregator-service/src/test/java/com/springflix/SpringflixApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/aggregator-service/src/test/java/com/springflix/AggregatorServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/src/main/java/com/springflix/SpringflixApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/src/main/java/com/springflix/MovieServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/src/test/java/com/springflix/SpringflixApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/src/test/java/com/springflix/MovieServiceApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proto/src/main/java/com/springflix/SpringflixApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/springflix/SpringflixApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/springflix/UserServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/test/java/com/springflix/SpringflixApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/test/java/com/springflix/UserServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/springflix/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/springflix/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/users.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,11 +30,17 @@
       </list>
     </option>
   </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -62,9 +58,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "code.cleanup.on.save": "true",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/home/azilzor/Workspace/springflix-grpc/user-service",
     "node.js.detected.package.eslint": "true",
@@ -75,8 +76,15 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "actions.on.save",
     "spring.configuration.checksum": "0dd24531ab8b8db7b4f8bff63768b248",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/Change SQL Dialect": [
+      "H2"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -136,8 +144,17 @@
       <option name="presentableId" value="Default" />
       <updated>1691275837311</updated>
       <workItem from="1691275838705" duration="26000" />
-      <workItem from="1691358096422" duration="2121000" />
+      <workItem from="1691358096422" duration="4271000" />
     </task>
+    <task id="LOCAL-00001" summary="user service implementation">
+      <option name="closed" value="true" />
+      <created>1691360393055</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1691360393055</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,5 +162,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="user service implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="user service implementation" />
   </component>
 </project>
