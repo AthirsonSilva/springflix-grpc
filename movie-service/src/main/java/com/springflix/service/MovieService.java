@@ -21,6 +21,7 @@ public class MovieService extends MovieServiceGrpc.MovieServiceImplBase {
         List<MovieDto> movieDtoList = movieRepository.getMovieByGenreOrderByYearDesc(request.getGenre().name())
                 .stream().map(
                         movie -> MovieDto.newBuilder()
+                                .setId(movie.getId())
                                 .setTitle(movie.getTitle())
                                 .setYear(movie.getYear())
                                 .setRating(movie.getRating())

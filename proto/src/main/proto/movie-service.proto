@@ -6,14 +6,15 @@ option java_multiple_files = true;
 option java_package = "com.azilzor.springflix.movie";
 
 message MovieDto {
-  string title = 1;
-  int32 year = 2;
-  double rating = 3;
+  int32 id = 1;
+  string title = 2;
+  int32 year = 3;
+  double rating = 4;
 }
 
-message MovieSearchRequest { common.Genre genre = 1; }
+message MovieSearchRequest {common.Genre genre = 1;}
 
-message MovieSearchResponse { repeated MovieDto movies = 1; }
+message MovieSearchResponse {repeated MovieDto movies = 1;}
 
 service MovieService {
   rpc getMovies(MovieSearchRequest) returns (MovieSearchResponse);

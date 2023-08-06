@@ -20,14 +20,16 @@ public class UserService extends UserServiceGrpc.UserServiceImplBase {
     /**
      * get user genre
      *
-     * @param request request
+     * @param request          request
      * @param responseObserver responseObserver
      */
     @Override
     public void getUserGenre(UserSearchRequest request, StreamObserver<UserResponse> responseObserver) {
         UserResponse.Builder builder = UserResponse.newBuilder();
-        userRepository.findById(request.getLoginId())
-                .ifPresent(user -> builder.setName(user.getName())
+        userRepository.findById(Integer.valueOf(request.getLoginId()))
+                .ifPresent(user -> builder
+                        .setId(user.getId())
+                        .setName(user.getName())
                         .setLoginId(user.getLogin())
                         .setGenre(Genre.valueOf(user.getGenre())));
 
@@ -39,7 +41,7 @@ public class UserService extends UserServiceGrpc.UserServiceImplBase {
     @Transactional
     public void updateUserGenre(UserGenreUpdateRequest request, StreamObserver<UserResponse> responseObserver) {
         UserResponse.Builder builder = UserResponse.newBuilder();
-        userRepository.findById(request.getLoginId())
+        userRepository.findById(Integer.valueOf(request.getLoginId()))
                 .ifPresent(user -> {
                     user.setGenre(request.getGenre().name());
 

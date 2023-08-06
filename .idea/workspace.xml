@@ -4,19 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d01ddcbf-542b-460a-b2a0-2efb933e0766" name="Changes" comment="user service implementation">
-      <change afterPath="$PROJECT_DIR$/movie-service/src/main/java/com/springflix/entity/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-service/src/main/java/com/springflix/repository/MovieRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-service/src/main/java/com/springflix/service/MovieService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-service/src/main/resources/data.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movie-service/src/main/resources/movies.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="d01ddcbf-542b-460a-b2a0-2efb933e0766" name="Changes" comment="adding auto initialization property">
+      <change afterPath="$PROJECT_DIR$/aggregator-service/src/main/java/com/springflix/controller/AggregatorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aggregator-service/src/main/java/com/springflix/dto/MovieDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aggregator-service/src/main/java/com/springflix/dto/UserGenreDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aggregator-service/src/main/java/com/springflix/service/AggregationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aggregator-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/movie-service/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/springflix/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/springflix/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/users.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aggregator-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/movie-service/src/main/java/com/springflix/service/MovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/movie-service/src/main/java/com/springflix/service/MovieService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/src/main/proto/movie-service.proto" beforeDir="false" afterPath="$PROJECT_DIR$/proto/src/main/proto/movie-service.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/src/main/proto/user-service.proto" beforeDir="false" afterPath="$PROJECT_DIR$/proto/src/main/proto/user-service.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/springflix/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/springflix/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/springflix/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/springflix/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,8 +74,8 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "rearrange.code.on.save": "true",
     "settings.editor.selected.configurable": "actions.on.save",
     "spring.configuration.checksum": "0dd24531ab8b8db7b4f8bff63768b248",
@@ -99,7 +99,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MovieServiceApplication">
+  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="springflix" />
       <method v="2">
@@ -144,7 +144,7 @@
       <option name="presentableId" value="Default" />
       <updated>1691275837311</updated>
       <workItem from="1691275838705" duration="26000" />
-      <workItem from="1691358096422" duration="4271000" />
+      <workItem from="1691358096422" duration="6525000" />
     </task>
     <task id="LOCAL-00001" summary="user service implementation">
       <option name="closed" value="true" />
@@ -154,7 +154,23 @@
       <option name="project" value="LOCAL" />
       <updated>1691360393055</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="movie service implementation">
+      <option name="closed" value="true" />
+      <created>1691363174720</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1691363174720</updated>
+    </task>
+    <task id="LOCAL-00003" summary="adding auto initialization property">
+      <option name="closed" value="true" />
+      <created>1691363287902</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1691363287902</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +179,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="user service implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="user service implementation" />
+    <MESSAGE value="movie service implementation" />
+    <MESSAGE value="adding auto initialization property" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding auto initialization property" />
   </component>
 </project>
