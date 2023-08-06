@@ -99,7 +99,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
+  <component name="RunManager" selected="Spring Boot.MovieServiceApplication">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="springflix" />
       <method v="2">
