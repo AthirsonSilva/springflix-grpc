@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package common;
+
+option java_multiple_files = true;
+option java_package = "com.azilzor.springflix.common";
+
+enum Genre {
+  ACTION = 0;
+  COMEDY = 1;
+  DRAMA = 2;
+  HORROR = 3;
+  ROMANCE = 4;
+  THRILLER = 5;
+}
